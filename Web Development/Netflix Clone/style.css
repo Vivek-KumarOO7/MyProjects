@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Roboto+Condensed&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arimo', sans-serif;
+    /* color: white; */
+    /* background-color: black; */
+    /* opacity: 80%; */
+}
+
+h3 {
+    font-size: 24px;
+    color: white;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 48px;
+    color: white;
+    font-weight: 900;
+}
+
+
+/* ____________________________________________________________________________________________________________________________ */
+
+.header {
+    height: 700px;
+    width: 1519px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/1stBG.jpg);
+    background-position-x: -250px;
+    background-position-y: -280px;
+}
+
+.header-content {
+    height: 228px;
+    width: 907px;
+    text-align: center;
+    position: relative;
+    margin: 0px auto;
+    transform: translateX(0px) translateY(200px);
+}
+
+.navbar,
+.nav-buttons {
+    display: flex;
+}
+
+.navbar {
+    height: 86px;
+    width: 1170px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-buttons {
+    height: inherit;
+    width: 146px + 87px;
+    justify-content: center;
+    align-items: center;
+}
+
+.lang-button {
+    width: 146px;
+    text-align: center;
+    margin: 0px 5px;
+}
+
+.signIn {
+    text-align: center;
+    width: 87px;
+    margin: 0px 5px;
+}
+
+#lang-opt {
+    height: 32px;
+    width: 126px;
+    border: 1px rgba(200, 200, 200, 0.64) solid;
+    background-color: rgba(0, 0, 0, 0.412);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: large;
+}
+
+#sign-in {
+    height: 32px;
+    width: 77px;
+    color: white;
+    background-color: #e50914;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.logo img {
+    position: relative;
+    height: 40px;
+    width: 148px;
+    scale: 1.15;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.header-content h1 {
+    /* display: inline-block; */
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    font-weight: 900;
+}
+
+.header-content h3 {
+    font-size: 24px;
+    margin-top: 16px;
+    color: white;
+    font-weight: 400;
+}
+
+.header-content p {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin-top: 30px;
+}
+
+.signUp {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.email {
+    padding: 16px 16px 16px;
+    width: 373px;
+    border: 1px rgba(200, 200, 200, 0.64) solid;
+    background-color: rgba(0, 0, 0, 0.412);
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: start;
+    margin: 0px 7px;
+}
+
+.email::placeholder {
+    color: rgb(182, 176, 176);
+}
+
+.get-started {
+    height: 54.4px;
+    width: 201.25px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.412);
+    color: white;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 800;
+    background-color: #e50914;
+}
+
+
+/* ____________________________________________________________________________________________________________________________ */
+
+.divider {
+    width: auto;
+    padding-top: 7px;
+    background-color: rgb(60, 60, 60);
+}
+
+.feature-container {
+    height: 438px;
+    width: 1519px;
+    padding: 72px 0px;
+    background-color: black;
+    color: white;
+}
+
+.feature {
+    height: 438px;
+    width: 1170px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-text {
+    width: 585px;
+}
+
+.feature-img {
+    width: 585px;
+}
+
+.feature-img img {
+    width: 585px;
+    position: absolute;
+}
+
+.TVvideo {
+    position: absolute;
+    height: 300px;
+    width: 426px;
+    right: 257px;
+    top: 840px;
+}
+
+.feature-text h1 {
+    padding-top: 148px;
+}
+
+.feature-text h3 {
+    /* width: 460px; */
+    padding-top: 16px;
+}
+
+
+/* ____________________________________________________________________________________________________________________________ */
+
+.watchVideo {
+    position: absolute;
+    height: 300px;
+    width: 360px;
+    right: 293px;
+    top: 1958px;
+}
+
+
+/* ____________________________________________________________________________________________________________________________ */
+
+.faqs-container {
+    height: 783px;
+    width: 1519px;
+    color: white;
+    background-color: black;
+    padding: 72px 0px;
+}
+
+.faqs h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.ques-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question {
+    height: 36px;
+    width: 1122px;
+    line-height: 36px;
+    padding: 24px;
+    margin: 5px 0px;
+    background-color: rgb(60, 60, 60);
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    transition-duration: 0.2s;
+}
+
+.question div+div {
+    font-size: 48px;
+}
+
+.question:hover {
+    background-color: rgb(84, 84, 84);
+}
+
+.faqs-container p {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin-top: 56px;
+    text-align: center;
+}
+
+
+/* ____________________________________________________________________________________________________________________________ */
+
+.footer-container {
+    width: 1170px;
+    height: 343px;
+    padding: 60px 0px;
+    margin: 0px auto;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    width: 1519px;
+    height: 463px;
+}
+
+.call {
+    padding: 12px 0px;
+    color: rgb(182, 176, 176);
+}
+
+.link-container {
+    height: 177px;
+    font-size: 16px;
+    padding: 12px 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* align-content: space-between; */
+}
+
+.footer a {
+    color: rgb(182, 176, 176);
+}
+
+.footer select {
+    margin: 12px 0px;
+}
+
+.footer select+div {
+    padding: 12px 0px;
+    color: rgb(182, 176, 176);
+}
