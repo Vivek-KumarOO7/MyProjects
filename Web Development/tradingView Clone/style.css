@@ -17,6 +17,14 @@ main {
     width: 100%;
 }
 
+.profit {
+    color: #22ab94;
+}
+
+.loss {
+    color: #f23645;
+}
+
 .main-body {
     /* flex: 1; */
     width: 1078px;
@@ -25,10 +33,10 @@ main {
 
 .side-panel {
     position: fixed;
-    right: 0px;
+    right: 45px;
     height: 100%;
-    width: 440px;
-    background-color: rgb(49, 240, 240);
+    width: 400px;
+    background-color: rgb(255, 255, 255);
 }
 
 .side-navbar {
@@ -226,6 +234,11 @@ main {
 }
 
 .stocks-container section::-webkit-scrollbar {
+    background-color: transparent;
+    height: 0px;
+}
+
+.stocks-container section:hover::-webkit-scrollbar {
     background-color: transparent;
     height: 8px;
 }
@@ -496,10 +509,15 @@ main {
 
 .card-container::-webkit-scrollbar {
     background-color: transparent;
+    height: 0px;
+}
+
+.card-container:hover::-webkit-scrollbar {
+    background-color: transparent;
     height: 8px;
 }
 
-.card-container::-webkit-scrollbar-thumb {
+.card-container:hover::-webkit-scrollbar-thumb {
     background: rgba(124, 124, 124, 0.482);
     border-radius: 4px;
 }
@@ -667,4 +685,211 @@ main {
     width: 56px;
     border-radius: 12px;
     object-fit: fill;
+}
+
+
+/* ----------Side Panel---------- */
+
+.side-panel {
+    border-left: 1px solid rgb(210, 210, 210);
+}
+
+
+/* ---------Header----------- */
+
+.upper-section {
+    height: 400px;
+    overflow: auto;
+}
+
+.upper-section::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0px;
+}
+
+.upper-section:hover::-webkit-scrollbar {
+    background-color: transparent;
+    width: 4px;
+}
+
+.upper-section:hover::-webkit-scrollbar-thumb {
+    background: rgba(124, 124, 124, 0.482);
+    border-radius: 4px;
+}
+
+.side-panel .upper-section>header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    height: 48px;
+    position: fixed;
+    top: 0;
+    width: 400px;
+    background-color: #FFF;
+}
+
+.side-panel .upper-section header .watchlist {
+    height: 32px;
+    border-radius: 6px;
+    line-height: 230%;
+    padding: 0px 12px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.side-panel .upper-section header .watchlist:hover {
+    background-color: #f0f3fa;
+}
+
+.side-panel .upper-section header .watchlist-options {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.side-panel .upper-section header .watchlist-options span {
+    padding: 4px;
+    height: 32px;
+    border-radius: 6px;
+    font-weight: 300;
+}
+
+.side-panel .upper-section header .watchlist-options span:hover {
+    background-color: #f0f3fa;
+}
+
+
+/* ------------Actual Info section-------------- */
+
+.side-panel .upper-section .recent-stock {
+    margin-top: 48px;
+}
+
+.side-panel .recent-stock>header {
+    display: flex;
+    height: 24px;
+    color: grey;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(210, 210, 210);
+    padding: 0px 12px;
+    width: 400px;
+    position: fixed;
+    top: 48px;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.side-panel .recent-stock section {
+    margin-top: 72px;
+}
+
+.side-panel .stocks-shown>header .symbol {
+    width: 30%;
+    padding: 4px 0px;
+}
+
+.side-panel .stocks-shown>header .stats {
+    flex: 1;
+    text-align: end;
+    padding: 4px 0px;
+}
+
+.side-panel .stocks-shown>header:hover .stats {
+    border-left: 1px solid rgb(210, 210, 210);
+}
+
+.side-panel .stocks-shown .stock {
+    display: flex;
+    font-size: 14px;
+    padding: 4px 12px;
+    border-bottom: 1px solid rgba(228, 228, 228, 0.562);
+}
+
+.side-panel .stocks-shown .stock .stock-name {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.side-panel .stocks-shown .stock .stock-name .logo {
+    height: 18px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: purple;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    line-height: 175%;
+    margin-right: 10px;
+}
+
+.side-panel .stocks-shown .stock:nth-of-type(2n) .stock-name .logo {
+    background-color: #ff9800;
+}
+
+.side-panel .stocks-shown .stock:nth-of-type(3n) .stock-name .logo {
+    background-color: #ff004c;
+}
+
+.side-panel .stocks-shown .stock .stock-stat {
+    text-align: end;
+    flex: 1;
+}
+
+.side-panel .stocks-shown section input {
+    display: none;
+}
+
+.side-panel .stocks-shown section input:checked+label {
+    background-color: #f0f3fa;
+}
+
+.side-panel .stocks-shown section label:hover {
+    background-color: #f0f3fa;
+}
+
+
+/* --------------Expandable Section---------------- */
+
+.lists {
+    margin-top: 10px;
+}
+
+.lists section {
+    position: relative;
+}
+
+.lists header {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 0px 16px;
+    color: grey;
+}
+
+.lists>input {
+    display: none;
+}
+
+.lists header label {
+    display: flex;
+    align-items: center;
+    transition: 0.4s;
+    transform: rotate(90deg);
+}
+
+.lists input:checked~header label {
+    transform: rotate(0deg);
+    transition: 0.4s;
+}
+
+.lists header label span {
+    font-size: 16px;
+}
+
+.lists header span {
+    font-size: 10px;
 }
