@@ -44,7 +44,7 @@ main {
     right: 0px;
     height: 100%;
     width: 45px;
-    background-color: aquamarine;
+    border-left: 1px solid rgba(212, 212, 212, 0.599);
 }
 
 
@@ -892,4 +892,299 @@ main {
 
 .lists header span {
     font-size: 10px;
+}
+
+
+/* --------MIddle Line---------- */
+
+.side-panel .middle-line {
+    height: 5px;
+    width: 100;
+    background-color: #d9dce4;
+}
+
+
+/* ---------Lower Section--------- */
+
+.lower-section>.stock-info {
+    overflow: auto;
+    width: 400px;
+    height: 340px;
+}
+
+.lower-section>.stock-info::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0px;
+}
+
+.lower-section>.stock-info:hover::-webkit-scrollbar {
+    background-color: transparent;
+    width: 4px;
+}
+
+.lower-section>.stock-info::-webkit-scrollbar-thumb {
+    background: rgba(124, 124, 124, 0.482);
+    border-radius: 4px;
+}
+
+.lower-section>header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+    margin: 6px;
+}
+
+.lower-section>header .stock-logo-name {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.lower-section>header .stock-logo-name .logo {
+    height: 24px;
+    width: 24px;
+    color: white;
+    background-color: purple;
+    line-height: 1.5rem;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.lower-section>header .stock-logo-name .stock-name {
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.lower-section>header .options {
+    display: flex;
+    align-items: center;
+}
+
+.lower-section>header .options span {
+    margin: 0px 8px;
+    font-weight: 200;
+}
+
+
+/* ---------Stock Info Part--------- */
+
+.lower-section .stock-info {
+    padding: 0px 16px;
+}
+
+.lower-section .stock-info>header {
+    display: flex;
+    align-items: center;
+}
+
+.lower-section .stock-info>header>span {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.lower-section .stock-info>header span {
+    font-size: 12px;
+}
+
+.lower-section .stock-info>header>span+span {
+    font-size: 16px;
+    color: #a3a3a3;
+}
+
+.lower-section .stock-info>header>small {
+    display: flex;
+    align-items: center;
+}
+
+.lower-section .stock-info>header>span:hover+span {
+    color: #2962ff;
+}
+
+.lower-section .stock-info>header>span:hover {
+    color: #2962ff;
+}
+
+.lower-section>.stock-info>small {
+    display: block;
+    font-size: 14px;
+    color: #a3a3a3;
+    padding: 8px 0px;
+}
+
+.lower-section>.stock-info>.stock-stat {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.lower-section>.stock-info>.stock-stat>.price {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.lower-section>.stock-info>.stock-stat>.price>span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.lower-section>.stock-info>.market-status {
+    display: flex;
+    align-items: center;
+    margin: 4px 0px;
+}
+
+.lower-section>.stock-info>.market-status span {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.lower-section>.stock-info>.quick-news {
+    background-color: #683ab725;
+    border-radius: 6px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.lower-section>.stock-info>.quick-news:hover {
+    background-color: #673ab740;
+}
+
+.lower-section>.stock-info>.quick-news>span {
+    align-self: flex-start;
+    padding: 6px 4px;
+    color: #683ab7;
+}
+
+.lower-section>.stock-info>.quick-news span {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+/* ------------------------------------ */
+
+.lower-section>.stock-info>.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 12px;
+    margin: 12px 0px;
+}
+
+.lower-section>.stock-info>.features>.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3c3ab710;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.lower-section>.stock-info>.features>.options:hover {
+    background-color: #3d40901d;
+}
+
+.lower-section>.stock-info>.features>.options .left-side {
+    display: flex;
+    align-items: center;
+}
+
+.lower-section>.stock-info>.features>.third {
+    grid-column: 1/span 2;
+}
+
+.lower-section>.stock-info>.features>.options span {
+    font-size: 14px;
+    padding: 0px 4px;
+}
+
+
+/* ------------------------------------- */
+
+.lower-section>.stock-info .heading {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 12px 0px;
+}
+
+.lower-section>.stock-info>.performance>.stat-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 8px;
+}
+
+.lower-section>.stock-info>.performance>.stat-container>.stat {
+    background-color: #22ab942b;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+}
+
+.lower-section>.stock-info>.performance>.stat-container>.stat>.time {
+    font-size: 10px;
+    color: #5c5c5c83;
+}
+
+.lower-section>.stock-info>.technical {
+    margin: 14px 0px;
+}
+
+.lower-section>.stock-info>.technical>img {
+    width: 360px;
+    object-fit: contain;
+}
+
+
+/* ------------Side Navbar------------- */
+
+.side-navbar>section>input {
+    display: none;
+}
+
+.side-navbar>section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    margin: 8px 0px;
+    border-bottom: 1px solid rgba(212, 212, 212, 0.599);
+    padding-bottom: 8px;
+}
+
+.side-navbar>section>label {
+    border-radius: 6px;
+    color: black;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-navbar>section>input:checked+label {
+    background-color: #89a8ff2d;
+    color: #2962ff;
+}
+
+.side-navbar>section>label:hover {
+    background-color: #89a8ff2d;
+}
+
+.side-navbar>section>label>span {
+    font-weight: 200;
+    font-size: 32px;
+    text-align: center;
+}
+
+.side-navbar>.second-section {
+    border: none;
 }
