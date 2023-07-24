@@ -14,11 +14,6 @@ input[type="number"]::-webkit-inner-spin-button {
     display: none;
 }
 
-
-/* #bg-img {
-    width: 100%;
-} */
-
 body {
     background-image: url(img/bg_img.jpg);
     background-size: auto;
@@ -55,7 +50,7 @@ body {
 }
 
 
-/* -------------------------------------------- */
+/* ---------------------Nav Bar----------------------- */
 
 .navbar {
     width: 100%;
@@ -98,6 +93,9 @@ body {
     background-color: rgba(146, 146, 146, 0.56);
 }
 
+
+/* -------------------Main Body-------------------- */
+
 .main {
     background: linear-gradient(-90deg, rgb(0, 0, 0), transparent 120%);
     height: 100vh;
@@ -130,6 +128,9 @@ body {
         display: none;
     }
 }
+
+
+/* --------------------Form---------------------- */
 
 .main .form {
     height: 600px;
@@ -223,11 +224,6 @@ body {
     color: rgba(255, 255, 255, 0.671);
     transition: 0.5s;
     cursor: pointer;
-}
-
-.input-wrap.focus label {
-    top: -48px;
-    font-size: 12px;
 }
 
 .input-wrap.not-empty label {
